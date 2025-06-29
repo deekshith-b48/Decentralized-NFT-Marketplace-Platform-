@@ -1,0 +1,36 @@
+/* General App Styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7f6; /* A light background for the whole app */
+}
+
+.main-content {
+  flex-grow: 1; /* Ensures main content takes up available space */
+  padding-top: 0px; /* Adjust if Navbar height changes or if it's fixed */
+  /* If Navbar becomes fixed, you might need a margin-top equal to Navbar height */
+  /* For now, assuming Navbar is part of normal document flow */
+  width: 100%;
+  max-width: 100%; /* Ensure it doesn't overflow horizontally */
+  /* text-align: left; /* Reset create-react-app's text-align: center if needed */
+}
+
+/* Remove or comment out default CRA logo and header styles if no longer used */
+/*
+.App-logo { ... }
+@media (prefers-reduced-motion: no-preference) { ... }
+.App-header { ... }
+.App-link { ... }
+@keyframes App-logo-spin { ... }
+*/
+
+/* Basic reset or body style (optional, often in index.css) */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

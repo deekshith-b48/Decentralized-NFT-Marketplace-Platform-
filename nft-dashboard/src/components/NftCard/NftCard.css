@@ -1,0 +1,80 @@
+.nft-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  /* width: 300px; */ /* Replaced by flex-basis and max-width for responsiveness */
+  flex: 0 1 300px; /* Flex properties: grow 0, shrink 1, basis 300px */
+  max-width: 300px; /* Ensure it doesn't grow beyond 300px if container is wider */
+  min-width: 250px; /* Ensure it doesn't get too small on narrow screens before wrapping */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Added transition */
+}
+
+.nft-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 4px 8px 12px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+}
+
+.nft-card-placeholder {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  /* width: 300px; */ /* Replaced for consistency with .nft-card */
+  flex: 0 1 300px;
+  max-width: 300px;
+  min-width: 250px;
+  height: 400px; /* Approximate height of a card with image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  background-color: #f9f9f9;
+}
+
+.nft-card-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.nft-card-info {
+  text-align: center;
+}
+
+.nft-card-name {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.nft-card-description {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+  /* Ensure the text color isn't overridden by a parent link's default blue if any */
+  /* However, the NftCard itself is now inside a Link, so its children's color should be fine. */
+  /* This is more for the .nft-card-link itself */
+}
+
+.nft-card-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Make the link inherit text color from its parent or self */
+  display: block; /* Ensure the link takes up the card's space for clicking */
+  /* margin: 16px; /* This was on nft-card, if link wraps card, move margin here or ensure card still has it */
+}
+
+/* If NftCard still has margin, and Link wraps it, this might be fine.
+   If the Link is the outermost clickable element, then margin from .nft-card
+   should be applied to .nft-card-link instead, or ensure .nft-card itself still defines it.
+   The current structure is <Link><div.nft-card>...</div.nft-card></Link>,
+   so margin on .nft-card is correct. The .nft-card-link just needs to ensure
+   it doesn't add link styling.
+*/
