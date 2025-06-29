@@ -1,0 +1,31 @@
+.homepage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.nft-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards in the grid */
+  gap: 20px; /* Spacing between cards */
+}
+
+.homepage-status {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 50px;
+  color: #7f8c8d;
+}
+
+.homepage-status.error {
+  color: #e74c3c;
+  font-weight: bold;
+}

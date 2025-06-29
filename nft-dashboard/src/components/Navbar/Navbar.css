@@ -1,0 +1,88 @@
+.navbar {
+  background-color: #34495e; /* Dark blue-grey */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ecf0f1; /* Light grey/white text */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  flex-grow: 1;
+}
+
+.navbar-logo {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #1abc9c; /* Teal for hover */
+}
+
+.navbar-actions {
+  /* Styles for wallet connect button or other actions */
+}
+
+.wallet-connect-btn {
+  background-color: #1abc9c; /* Teal */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.wallet-connect-btn:hover {
+  background-color: #16a085; /* Darker teal */
+}
+
+.wallet-connect-btn:disabled {
+  background-color: #95a5a6; /* Grey when disabled */
+  cursor: not-allowed;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-address {
+  color: #ecf0f1;
+  margin-right: 15px;
+  font-size: 0.9em;
+  background-color: #2c3e50; /* Slightly darker than navbar bg */
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.disconnect-btn {
+  background-color: #e74c3c; /* Red for disconnect */
+}
+
+.disconnect-btn:hover {
+  background-color: #c0392b; /* Darker red */
+}

@@ -1,0 +1,103 @@
+.nft-detail-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.nft-detail-content {
+  display: flex;
+  gap: 30px;
+}
+
+.nft-detail-image-container {
+  flex: 1;
+  max-width: 400px; /* Limit image container size */
+}
+
+.nft-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.nft-detail-info {
+  flex: 2;
+}
+
+.nft-detail-name {
+  font-size: 2.2em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.nft-detail-description {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.nft-detail-section {
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.nft-detail-section strong {
+  color: #34495e;
+  margin-right: 8px;
+}
+
+.nft-attributes-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nft-attribute-item {
+  background-color: #ecf0f1;
+  padding: 8px 12px;
+  border-radius: 20px; /* Pill shape */
+  font-size: 0.85em;
+  border: 1px solid #bdc3c7;
+}
+
+.nft-attribute-item .trait-type {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 5px;
+}
+
+.nft-attribute-item .trait-value {
+  color: #3498db;
+}
+
+.nft-detail-status {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 50px;
+  color: #7f8c8d;
+}
+
+.nft-detail-status.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
